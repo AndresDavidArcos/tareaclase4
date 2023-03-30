@@ -10,6 +10,7 @@ export function Sphinx(props) {
   const { nodes, materials } = useGLTF('../../public/models/sphinx.glb')
     /** Textures*/
     const tPath = "../../public/textures/"
+
     const sphinxTextures = useTexture({
       map: tPath+"Wall_Stone_Hieroglyphs_001_basecolor.jpg",
       aoMap: tPath+"Wall_Stone_Hieroglyphs_001_ambientOcclusion.jpg",
@@ -17,7 +18,6 @@ export function Sphinx(props) {
       displacementMap: tPath+"Wall_Stone_Hieroglyphs_001_height.png",
       normalMap: tPath+"Wall_Stone_Hieroglyphs_001_normal.jpg"
     });
-    console.log(materials.Regular)
     materials.Regular.map = sphinxTextures.map;
   return (
     <group {...props} dispose={null}>

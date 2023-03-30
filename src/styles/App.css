@@ -5,3 +5,26 @@ body {
 #three-canvas-container {
   height: 100vh !important;
 }
+
+.interface-buttons {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.interface-buttons > button{
+  font-size: xx-large;
+}
+
+.label > div
+{
+    font-family: Helvetica, Arial;
+    position: absolute;
+    background: #00000088;
+    color: white;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 30px;
+    user-select: none;
+}

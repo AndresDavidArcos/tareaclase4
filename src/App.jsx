@@ -9,7 +9,7 @@ function App() {
       <Canvas id="three-canvas-container" camera={{ position: [1, 1.5, 2.5], fov: 50 }} shadows>
         <Experience />
       </Canvas>
-      <Interface />
+      <Interface/>
     </>
   );
 }

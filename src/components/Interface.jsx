@@ -4,7 +4,8 @@ const Interface = () => {
   const { animations, animationIndex, setAnimationIndex } =
     useCharacterAnimations();
   return (
-      <>
+      <div className="interface-buttons">
+        <h2>Fox actions: </h2>
         {animations.map((animation, index) => (
           <button
             key={animation}
@@ -13,7 +14,7 @@ const Interface = () => {
             {animation}
           </button>
         ))}
-      </>
+      </div>
   );
 };
 
